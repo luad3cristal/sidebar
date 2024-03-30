@@ -19,8 +19,6 @@ h1 {
   margin: 20px 0 0 10px;
 }
 
-
-
 /* sidebar fechada */
 
 .sidebar {
@@ -81,14 +79,54 @@ ul li a img {
   justify-content: center;
 }
 
+/* escondendo conteúdo da sidebar fechada */
 .hidden {
   display: none;
 }
 
+/* sidebar aberta */
 .sidebar.active {
-  width: 250px;
+  width: 180px;
 }
-/*
-p {
+
+.sidebar.active .hidden {
+  display: flex;
+}
+
+.sidebar.active .original {
+  display: flex;
+  flex-direction: column;
+  margin-top: -281px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.sidebar.active #first {
+  display: flex;
+  align-content: center;
+
+  flex-direction: row;
+  gap: 60px;
+}
+
+.sidebar.active .original a {
+  display: flex;
+  align-content: center;
+
+  flex-direction: row;
+  gap: 20px;
+
+  text-decoration: none;
+
   font-weight: 400;
+  font-size: 16px;
+}
+
+/* .sidebar.active .second li {
+  background-color: rgb(220, 228, 227, 0.6);
+  width: 100vw;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
 } */
