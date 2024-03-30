@@ -86,27 +86,22 @@ ul li a img {
 
 /* sidebar aberta */
 .sidebar.active {
-  width: 180px;
+  width: 210px;
 }
 
+/* mostrando o conteúdo da sidebar */
 .sidebar.active .hidden {
   display: flex;
 }
 
+/* alterando os primeiros links da sidebar */
 .sidebar.active .original {
   display: flex;
   flex-direction: column;
-  margin-top: -281px;
+  margin-top: -272px;
+  margin-left: -5px;
   border: 1px solid transparent;
   border-radius: 5px;
-}
-
-.sidebar.active #first {
-  display: flex;
-  align-content: center;
-
-  flex-direction: row;
-  gap: 60px;
 }
 
 .sidebar.active .original a {
@@ -114,7 +109,7 @@ ul li a img {
   align-content: center;
 
   flex-direction: row;
-  gap: 20px;
+  gap: 25px;
 
   text-decoration: none;
 
@@ -122,11 +117,69 @@ ul li a img {
   font-size: 16px;
 }
 
-/* .sidebar.active .second li {
+/* alterando o hover */
+.sidebar.active .original li {
+  margin-bottom: 15px;
+  padding: 9px 11px 8px 10px;
+}
+
+.sidebar.active .original li:hover {
+  padding: 9px 11px 8px 10px;
+
+  border-radius: 10px;
+  background-color: rgb(220, 228, 227, 0.8);
+}
+
+/* configurando a logo da sidebar */
+.sidebar.active #first {
+  display: flex;
+  align-content: center;
+
+  flex-direction: row;
+  gap: 70px;
+}
+
+/* configurando a seção de saida e perfil da sidebar */
+.sidebar.active .second li {
   background-color: rgb(220, 228, 227, 0.6);
   width: 100vw;
-  height: 50px;
+  height: 65px;
 
   display: flex;
   align-items: center;
-} */
+  justify-content: flex-start;
+}
+
+/* configurando o avatar da sidebar */
+.sidebar.active #avatar {
+  position: fixed;
+  left: 5px;
+
+  display: inline-flex;
+  gap: 6px;
+  align-content: center;
+}
+
+.sidebar.active #avatar p {
+  font-size: 15px;
+  width: 100px;
+  position: fixed;
+  bottom: 28px;
+}
+
+.sidebar.active #avatar span {
+  font-size: 12px;
+  position: fixed;
+  bottom: 14px;
+}
+
+.sidebar.active #avatar img {
+  border-radius: 10px;
+}
+
+/* alinhando o link de saida da sidebar */
+.sidebar.active .second a {
+  position: fixed;
+  left: 175px;
+  bottom: 13px;
+}
