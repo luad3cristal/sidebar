@@ -19,6 +19,8 @@ h1 {
   margin: 20px 0 0 10px;
 }
 
+
+
 /* sidebar fechada */
 
 .sidebar {
@@ -45,7 +47,7 @@ ul li a img {
 .original {
   display: flex;
   flex-direction: column;
-  margin-top: -235px;
+  margin-top: -237px;
   border: 1px solid transparent;
   border-radius: 5px;
 }
@@ -58,8 +60,8 @@ ul li a img {
 .original li:hover {
   padding: 10px 11px 6px 10px;
 
-  border-radius: 5px;
-  background-color: rgb(220, 228, 227, 0.6);
+  border-radius: 10px;
+  background-color: rgb(220, 228, 227, 0.8);
 }
 
 /* alterando o segundo ul */
@@ -79,6 +81,13 @@ ul li a img {
   justify-content: center;
 }
 
+.hidden {
+  display: none;
+}
+
+.sidebar.active {
+  width: 250px;
+}
 /*
 p {
   font-weight: 400;
